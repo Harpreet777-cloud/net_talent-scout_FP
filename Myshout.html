@@ -42,6 +42,20 @@
 
   
   </ul>
+</nav>
+<script language="javascript">
+function storelocal()
+{
+
+var name=document.getElementById("name").value
+var email=document.getElementById("email").value
+localStorage.setItem('name', name);
+localStorage.setItem('email', email);
+alert("Your information is stored");
+}
+</script>
+
+
   
 </body>
 </html>
