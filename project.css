@@ -4,3 +4,18 @@ body { background-image: url(bbackground.jpg);
     color: #D5E3FF;
     font-family: Arial, Verdana, sans-serif;
 }
+header { background-image: url(backgroundd.gif);
+    background-position: center;
+    background-repeat: no-repeat;	
+    background-color: #680291;   
+    color: #000000;
+    display: block; 		 
+}
+
+h1 { font-size: 3em;
+padding: 10px;
+line-height: 1.5;
+text-shadow: 2px 2px #CCCCCC;
+text-align: center;
+text-align: center; 
+}
