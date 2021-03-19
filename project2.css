@@ -14,3 +14,17 @@
     font-size: 35px;
     color: white;
   }
+  /* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 30px; /* only for demonstration, should be removed */
+  background: ;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 1px;
+}
