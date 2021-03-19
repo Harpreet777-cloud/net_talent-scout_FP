@@ -1,104 +1,25 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #F76E02;
-    padding:15px;
+h2{
     text-align: center;
-    font-size: 35px;
-    color: white;
-  }
-  /* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 20%;
-  height: 30px; /* only for demonstration, should be removed */
-  background: ;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 1px;
-}
-article {
-    float: right;
-    padding: 25px;
-    width: 90%;
-    background-color: darkcyan;
-    height: 300px; /* only for demonstration, should be removed */
-  }
-  
-  /* Clear floats after the columns */
-  section:after {
-    content:"";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #907;
-    padding: 1px;
-    text-align: center;
-    color: white;
-    height: 100px;
-  }
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 635px) {
-    nav, article {
-      width: 10%;
-      height: auto;
+    font-size: 24px;
     }
-  }
-  
-  
-  button {
-    border:none;
-    color: black;
-    padding: 12px 40px;
-    text-align: center;
-    text-decoration: bold;
-    display: inline-block;
-    font-size: 15px;
-    margin: 7px 40px;
-    transition-duration: 0.500s;
-    cursor: pointer;
-  }
-  
-  
-  
-  
-  
-  
-  button:hover {
-    background-color: purple;
-    color: white;
-  
+    hr{
+    margin-bottom: 30px;
     }
-    {
-        padding: 70px,10px;
-        text-align: center;
-        text-decoration: ;
-        display:"here is my " ;
-        font-size: 10px;
-        margin: 50px 7px;
-        cursor: pointer;
-        
-      }
-      
-      th, td {
-        padding: 20px;
-      }
-      
-      table {
-        border-spacing: 10px;
-      }
-  
+    div.container{
+    width: 960px;
+    height: 610px;
+    margin:50px auto;
+    font-family: 'Droid Serif', serif;
+    position:relative;
+    }
+    div.main{
+    width: 320px;
+    float:left;
+    margin-left:200px;
+    padding: 10px 55px 40px;
+    background-color: rgba(187, 255, 184, 0.65);
+    border: 15px solid white;
+    box-shadow: 0 0 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    }

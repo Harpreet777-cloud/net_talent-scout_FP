@@ -1,62 +1,66 @@
-
-body { background-image: url(bbackground.jpg);
-    background-color: #000000;
-    color: #D5E3FF;
-    font-family: Arial, Verdana, sans-serif;
-}
-header { background-image: url(backgroundd.gif);
-    background-position: center;
-    background-repeat: no-repeat;	
-    background-color: #680291;   
-    color: #000000;
-    display: block; 		 
-}
-
-h1 { font-size: 3em;
-padding: 10px;
-line-height: 1.5;
-text-shadow: 2px 2px #CCCCCC;
-text-align: center;
-text-align: center; 
-}
-.category { font-weight: bold;
-    background-color: #FFFFFF;
-     color: #800000; 
-     font-size: 1.7em;
-    text-shadow: 1px 1px 1px #667;
-}
-
-footer { font-size: .75em;
- font-style: italic; 
- display: block;
-}
-
-#left { float: left;
-width: 150px;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color: #ff0011;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;text-decoration:none;
+  }
+  
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+    grid-column-gap: 10px;  
+  } 
+  .left,
+.middle,
+.right {
+  padding: 10px;
+  height: 1800px; /* Should be removed. Only for demonstration */
 }
 
-#left ul {list-style-type: none; }				
-#left a:link { color: #3262A3; }
-
-#left a { text-decoration: none; }
-
-#left a:visited {color: #FF0000; }
-#left a:hover { color: #CCCCCC; }
-#right { margin-left: 180px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    }
-    
-nav { font-weight: bold;
-display: block;
+/* Style the left column */
+.left {
+  grid-area: left;
 }
 
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
 
-#wrapper { background-color: #FFFFFF;
-   color: #000066;
-   min-width: 700px;
-   max-width: 1024; 
-   width: 80%;
-   margin-left: auto; 
-   margin-right: auto;
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
 }
