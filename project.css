@@ -19,3 +19,26 @@ text-shadow: 2px 2px #CCCCCC;
 text-align: center;
 text-align: center; 
 }
+.category { font-weight: bold;
+    background-color: #FFFFFF;
+     color: #800000; 
+     font-size: 1.7em;
+    text-shadow: 1px 1px 1px #667;
+}
+
+footer { font-size: .75em;
+ font-style: italic; 
+ display: block;
+}
+
+#left { float: left;
+width: 150px;
+}
+
+#left ul {list-style-type: none; }				
+#left a:link { color: #3262A3; }
+
+#left a { text-decoration: none; }
+
+#left a:visited {color: #FF0000; }
+#left a:hover { color: #CCCCCC; }
