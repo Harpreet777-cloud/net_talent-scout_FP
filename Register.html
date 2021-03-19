@@ -34,3 +34,52 @@ alert(data);
 }
 });
 });
+</script>
+
+
+
+</head>
+<body>
+<script language="javascript">
+function storelocal()
+{
+
+var name=document.getElementById("name").value
+var email=document.getElementById("email").value
+var password=document.getElementById("password").value
+var cpassword=document.getElementById("cpassword").value
+localStorage.setItem('name', name);
+localStorage.setItem('email', email);
+localStorage.setItem('password', password);
+alert("You are Registered");
+}
+</script>
+<div class="container">
+
+<div class="main">
+<p><a href="index.html">Home</a></p>
+<form class="form" method="post" action="#" id="form1">
+<h2><font color="red">Registration Form</font></h2>
+<label>Name :</label>
+<input type="text" name="dname" id="name">
+<label>Email :</label>
+<input type="email" name="demail" id="email" required>
+<label>Password :</label>
+<input type="password" name="password" id="password">
+<label>Confirm Password :</label>
+<input type="password" name="cpassword" id="cpassword">
+<label>Sex :</label>
+<font color="red">
+<p>Male:<input type="radio" name="sex" id="sex1">
+Female:<input type="radio" name="sex" id="sex1"></p></font>
+<label>DOB :</label><br>
+<input type="date" name="dname" id="date">
+<font color="red"><label>Qualification :</label><br>
+<p>Graduate: <input type="checkbox" name="dname1" id="qual">Post-Graduate:<input type="checkbox" name="dname2" id="qual1"></p></font>
+
+<input type="button" name="register" id="register" value="Register" onclick="storelocal()">
+<input type="reset" name="Reset1" id="register" value="Reset">
+</form>
+</div>
+</body>
+</html>
